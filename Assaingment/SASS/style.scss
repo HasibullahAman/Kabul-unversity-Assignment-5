@@ -1,0 +1,51 @@
+body {
+    background: #ADD8E6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    h1 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        .form-group {
+            display: inline;
+            margin-bottom: 2em;
+            // background: red;
+            label {
+                display: block;
+                margin-bottom: 0.6rem;
+            }
+            .line-input {
+                width: 100%;
+                height: 3rem;
+            }
+            .dropdown {
+                display: inline;
+            }
+            .dropdown-2 {
+                display: block;
+                width: 100%;
+                height: 3em;
+            }
+            .text-area {
+                height: 8rem;
+                width: 100%;
+                resize: vertical;
+            }
+            .submit-button {
+                margin-left: 5%;
+                width: 90%;
+                height: 3rem;
+                background-color: #56B35F;
+            }
+        }
+        .radio-input {
+            display: flex;
+        }
+    }
+}

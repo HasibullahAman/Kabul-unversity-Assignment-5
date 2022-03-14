@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SASS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registeration Form</h1>
+        <hr>
+        <form action="">
+            <div class="form-group">
+                <label for="firstname">
+                    Firstname
+                </label>
+                <input type="text" required placeholder="FirstName" class="line-input">
+            </div>
+            <div class="form-group">
+                <label for="MiddleName">
+                    MiddleName
+                </label>
+                <input type="text" required placeholder="MiddleName" class="line-input">
+            </div>
+            <div class="form-group">
+                <label for="LastName">
+                    LastName
+                </label>
+                <input type="text" required placeholder="LastName" class="line-input">
+            </div>
+            <div class="form-group">
+                <label for="Courses" class="dropdown">
+                    Courses:
+                </label>
+                <select name="Course" id="" class="dropdown">
+                    <option disabled="" selected="" value="">Courses</option>
+                    <option value="HTML" class="dropdown">
+                        HTML
+                    </option>
+                    <option value="CSS" class="dropdown">
+                        CSS
+                    </option>
+                    <option value="SASS" class="dropdown">
+                        SASS
+                    </option>
+                    <option value="JS" class="dropdown">
+                        JS
+                    </option>
+                </select>
+            </div>
+            <h3>Gender</h3>
+            <div class="form-group radio-input">
+                <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+                Male
+                </label>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio">
+                    Female
+                </label>
+                <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio">
+                        Other
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="Phone" class="dropdown">
+                    Phone:
+                </label>
+                <select name="Course" id="" class="dropdown-2">
+                    <option disabled="" selected="" value="">Country Code</option>
+                    <option value="+90" class="dropdown">
+                        +90
+                    </option>
+                    <option value="+91" class="dropdown">
+                        +91
+                    </option>
+                    <option value="+92" class="dropdown">
+                        +92
+                    </option>
+                    <option value="+93" class="dropdown">
+                        +93
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Phone">
+                    Phone:
+                </label>
+                <input type="tel" required placeholder="Phone no" class="line-input">
+            </div>
+            <div class="form-group">
+                <label for="Address">
+                    Current Address:
+                </label>
+                <textarea type="input-textarea" placeholder="Current Address" class="text-area">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label for="Email">
+                    Email
+                </label>
+                <input type="email" required placeholder="Enter Email" class="line-input">
+            </div>
+            <div class="form-group">
+                <label for="Pass">
+                    Password
+                </label>
+                <input type="password" required placeholder="Password" class="line-input" min="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </div>
+            <div class="form-group">
+                <label for="Pass-re">
+                    Re-type Password
+                </label>
+                <input type="password" required placeholder="Password" class="line-input" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
